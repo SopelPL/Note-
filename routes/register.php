@@ -3,15 +3,6 @@ require_once("../application/config/autoload.php");
 
 if(isset($_POST['token']))
 {
-    if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
-    {
-        $secret = '6Lf0M34UAAAAAMqHPp-NDQbR6ajSeiH6M0qY3piI';
-
-        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-        $responseData = json_decode($verifyResponse);
-
-        if($responseData->success)
-        {
             if(!empty($_POST['register_email']) && !empty($_POST['register_password']))
             {
 
@@ -65,18 +56,6 @@ if(isset($_POST['token']))
                 echo json_encode(['status' => "FAIL", 'msg' => "[ROUTE][REGISTER] Fill all fields!"]);
                 exit();
             }
-        }
-        else
-        {
-            echo json_encode(['status' => "FAIL", 'msg' => "[ROUTE][REGISTER] reCaptcha verify error!"]);
-            exit();
-        }
-    }
-    else
-    {
-        echo json_encode(['status' => "FAIL", 'msg' => "[ROUTE][REGISTER] Check reCaptcha box!"]);
-        exit();
-    }
 }
 else
 {
