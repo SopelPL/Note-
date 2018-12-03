@@ -4,7 +4,7 @@ System notatek
 
 ## Wstęp
 
-Projekt Note++ jest moim autorskim projektem, umożliwiającym tworzenie notatek. System jest kompatybilny z urządzeniami mobilnymi, oraz mniejszymi ekranami.
+Projekt Note++ jest moim autorskim projektem, umożliwiającym tworzenie notatek. System jest kompatybilny z urządzeniami mobilnymi, oraz mniejszymi ekranami.W celu bezpieczeństwa aplikacji system wymaga ważnego klucza licencji. Aby takowy zdobyć napisz do mnie na adres email: sopelplyt@gmail.com, w wiadomości wpisując swój adres email, który będzie przypisany do licencji.
 
 ### Wymagania
 
