@@ -2,7 +2,7 @@
 
 System notatek
 
-## Getting Started
+## Wstęp
 
 Projekt Note++ jest moim autorskim projektem, umożliwiającym tworzenie notatek. System jest kompatybilny z urządzeniami mobilnymi, oraz mniejszymi ekranami.
 
